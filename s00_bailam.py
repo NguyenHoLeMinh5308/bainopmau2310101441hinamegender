@@ -24,9 +24,17 @@ hi('Dad', 'm')        | Hi Mr Dad!
 hi('AI-BTX', None)    | Hi AI-BTX!
 hi(None, None)        | Hi AI-BTX!
 """
-#endregion debai
 
-#region bailam
-def sumtwoint(i1, i2):
-  return 'todo'
-#endregion bailam
+def hi(name,gener):
+  if gener == 'f':
+    return f"Hi Ms {name}!"
+  if gener == 'm':
+    return f"Hi Mr {name}!"
+  elif gener == None and name != None:
+    return f'Hi AI-BTX!'
+  else:
+    return f'Hi!'
+
+  
+  
+
